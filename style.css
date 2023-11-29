@@ -123,7 +123,7 @@ button:hover {
   box-shadow: 0px 0px 20px blueviolet;
 }
 
-@media only screen and (max-width: 460px) {
+/* @media only screen and (max-width: 460px) {
 }
 
 #home-section,
@@ -132,7 +132,7 @@ button:hover {
 #projects-section,
 #contact-section {
   height: 20vh;
-}
+} */
 
 /*       HOME-SECTION (MAIN PAGE)       */
 
@@ -144,7 +144,7 @@ button:hover {
   background: linear-gradient(45deg, #d2001a,#7462ff,#f48e21,#d5239a);
   background-size: 300%, 300%;
   animation: color 8s ease-in-out infinite;
-  height: 60em;
+  height: 70em;
 }
 
 @keyframes color {
@@ -245,7 +245,7 @@ button:hover {
   align-items: center;
   justify-content: space-around;
   background-color: var(--secondarycolor);
-  height: 60em;
+  height: 70em;
   color: white;
 }
 
@@ -280,7 +280,7 @@ button:hover {
   align-items: center;
   justify-content: center;
   background-color: white;
-  height: 60em;
+  height: 70em;
   color: blueviolet;
 }
 
@@ -315,7 +315,7 @@ button:hover {
   align-items: center;
   justify-content: space-around;
   background-color: var(--secondarycolor);
-  height: 60em;
+  height: 70em;
   color: white;
   width: 100%;
 }
@@ -346,8 +346,8 @@ button:hover {
   border-radius: 20px;
   padding: 5px;
   margin: 5px;
-  width: 65%;
-  height: 65%;
+  width: 55%;
+  height: 55%;
   font-size: 1.3rem;
   background-color: var(--navback);
   cursor: pointer;

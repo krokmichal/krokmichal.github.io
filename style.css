@@ -144,7 +144,7 @@ button:hover {
   background: linear-gradient(45deg, #d2001a,#7462ff,#f48e21,#d5239a);
   background-size: 300%, 300%;
   animation: color 8s ease-in-out infinite;
-  height: 80em;
+  height: 60em;
 }
 
 @keyframes color {
@@ -245,7 +245,7 @@ button:hover {
   align-items: center;
   justify-content: space-around;
   background-color: var(--secondarycolor);
-  height: 80em;
+  height: 60em;
   color: white;
 }
 
@@ -280,7 +280,7 @@ button:hover {
   align-items: center;
   justify-content: center;
   background-color: white;
-  height: 80em;
+  height: 60em;
   color: blueviolet;
 }
 
@@ -315,7 +315,7 @@ button:hover {
   align-items: center;
   justify-content: space-around;
   background-color: var(--secondarycolor);
-  height: 80em;
+  height: 60em;
   color: white;
   width: 100%;
 }

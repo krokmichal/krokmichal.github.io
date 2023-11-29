@@ -378,6 +378,8 @@ button:hover {
 }
 
 #next {
+  width: 55%;
+  height: 55%;
   font-size: 1rem;
   background-color: var(--secondarycolor);
   cursor: auto;

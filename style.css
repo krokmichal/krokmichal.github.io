@@ -53,12 +53,11 @@ nav {
 }
 
 #navigation {
-  margin-right: 20px;
+  margin-right: 80px;
 }
 
 .logo {
   cursor: pointer;
-  margin-right: auto;
   font-size: 1.8rem;
   color: var(--whitelike);
 }
@@ -142,16 +141,33 @@ button:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: white;
-  height: 500px;
-  margin-bottom: 300px;
+  background: linear-gradient(45deg, #d2001a,#7462ff,#f48e21,#23d5ab);
+  background-size: 300%, 300%;
+  animation: color 12s ease-in-out infinite;
+  height: 80em;
+}
+
+@keyframes color {
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%
+  {
+    background-position: 0 50%;
+  }
+}
+
+#home {
+  margin-bottom: 200px;
 }
 
 #title {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 20%;
   font-size: 2rem;
 }
 
@@ -162,7 +178,7 @@ button:hover {
 }
 
 #my-name {
-  color: blueviolet;
+  color: white;
 }
 
 #contact-me {
@@ -229,7 +245,7 @@ button:hover {
   align-items: center;
   justify-content: space-around;
   background-color: var(--secondarycolor);
-  height: 750px;
+  height: 80em;
   color: white;
 }
 
@@ -264,7 +280,7 @@ button:hover {
   align-items: center;
   justify-content: center;
   background-color: white;
-  height: 750px;
+  height: 80em;
   color: blueviolet;
 }
 
@@ -299,7 +315,7 @@ button:hover {
   align-items: center;
   justify-content: space-around;
   background-color: var(--secondarycolor);
-  height: 750px;
+  height: 80em;
   color: white;
   width: 100%;
 }
@@ -363,7 +379,7 @@ button:hover {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 650px;
+  height: 60em;
   color: white;
   background-color: var(--navback);
 }
@@ -445,7 +461,16 @@ footer i {
   margin: 5px;
 }
 
+@media only screen and (max-width: 1900px) {
+  #home-section, #about-section, #skills-section, #projects-section
+  {
+    height: 800px;
+  }
+}
+
 @media only screen and (max-width: 1115px) {
+
+  
 
   #contact-me {
     margin-top: 50px;

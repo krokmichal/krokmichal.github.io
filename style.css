@@ -15,10 +15,6 @@ body {
   background-color: var(--very-dark-blue-main);
 }
 
-/* .navbar {
-  position: sticky;
-} */
-
 #main,
 #about,
 #projects,
@@ -209,7 +205,7 @@ label {
   margin-top: 10px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .project-links,
   .technologies,
   .project-description {
@@ -217,7 +213,7 @@ label {
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .me {
     width: 300px;
     margin-top: 50px;
@@ -268,7 +264,42 @@ label {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-height: 800px) {
+  #contact,
+  #about {
+    height: 170vh;
+  }
+}
+
+@media (max-height: 750px) {
+  #contact,
+  #about {
+    height: 200vh;
+  }
+}
+
+@media (max-height: 700px) {
+  #contact,
+  #about {
+    height: 230vh;
+  }
+}
+
+@media (max-height: 650px) {
+  #contact,
+  #about {
+    height: 250vh;
+  }
+}
+
+@media (max-height: 600px) {
+  #contact,
+  #about {
+    height: 320vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .container,
   .main-row {
     margin-left: 0;
@@ -294,6 +325,13 @@ label {
   .skillset {
     display: flex;
     justify-content: space-around;
+  }
+
+  .about-title,
+  .about-title-extension,
+  .about-text,
+  .about-main-row div {
+    padding: 0;
   }
 
   .odd {
@@ -348,7 +386,24 @@ label {
   }
 }
 
+@media screen and (max-width: 435px) {
+  .contact-container .row > * {
+    padding: 0;
+  }
+
+  .contact-container .row .col-12 .row {
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 @media screen and (max-width: 374px) {
+  .inf {
+    display: flex;
+    flex-direction: column;
+  }
+
   .skillset div {
     padding: 0;
     margin: 15px;

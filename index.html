@@ -1,108 +1,436 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michał Krok</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-<div id="page">
-    <nav>    
-        <div class="logo" onclick="window.location.reload()">MK</div>
-        <div id="navigation">
-            <ul class="nav-links">
-                <li><a href="#page">HOME</a></li>
-                <li><a href="#about-section">ABOUT</a></li>
-                <li><a href="#skills-section">SKILLS</a></li>
-                <li><a href="#projects-section">PROJECTS</a></li>
-                <li><a href="#contact-section">CONTACT</a></li>
-            </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>krokmichal</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+      integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" onclick="location.reload()"
+          >krokmichal</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Projects
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://krokmichal.github.io/hangman/"
+                    >Hangman</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://krokmichal.github.io/calculator/"
+                    >Calculator</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#projects">More...</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
-    <div id="home-section">
-        <div id="home">
-        <div id="title"><h1>Hi, I'm <span id="my-name">Michał Krok</span>
-            <br> 
-            <span id="title-extension">beginner web developer</span></h1>
-        </div>
-        <div id="contact-me">
-            <button id="contact-me-button" onclick="document.getElementById('contact-section').scrollIntoView();">Contact me</button>
-        </div>
-    </div>
-    </div>
-    <div class="section" id="about-section">
-        <div id="about-text">
-            <div id="about-title">ABOUT ME</div>
-            <div id="about-title-extension">
-            <span>Hello, I'm Michał Krok and I'm beginner web developer. <br> 
-                I am currently looking for my first job or internship. <br>
-                I would really like to develop my skills in creating websites <br>
-                and to take it from there even further in the future to learn different technologies. <br>
-                I also want to gain some experience and get know this industry better.</span>
+    <div class="container-fluid" id="main">
+      <div class="container main-container">
+        <div class="row main-row">
+          <div class="col-12 col-sm-6 col-xl-5 offset-xl-1 title">
+            <div class="row front">
+              <div class="col-12">
+                <h1>Front-End Developer</h1>
+              </div>
             </div>
-        </div>
-        <img id="about-img" src="img/about_me.svg">
-    </div>
-    <div class="section" id="skills-section">
-        <div id="skills">
-        <div id="skills-title">SKILLS</div>
-        <div id="skills-content">
-            HTML5 <br><br>
-            CSS3 <br><br>
-            JavaScript <br><br>
-            Git <br><br>
-            SQL <br> <br>
-            Linux <br>
-        </div>
-        <br> <br> <br>
-        and still learning...
-    </div>
-    </div>
-    <div class="section" id="projects-section">
-        <div id="projects-title">MY PROJECTS</div>
-            <div id="projects-content">
-            <a href="https://krokmichal.github.io/hangman"><div>HANGMAN GAME</div></a>
-            <a href="https://krokmichal.github.io/todo"><div>TODO APP</div></a>
-            <a href="https://krokmichal.github.io/movie-browser"><div>MOVIE BROWSER</div></a>
-            <a href="https://krokmichal.github.io/calculator"><div>CALCULATOR</div></a>
-            <a href="https://krokmichal.github.io/digital-clock"><div>DIGITAL CLOCK</div></a>
-            <div id="next" class="project">next in progress...</div>
-        </div>
-     </div>
-    <div id="contact-section">
-        <div id="contact-title">GET IN TOUCH</div>
-        <div id="contact-content">
-            <div id="contact-information">
-                <div><i class="fa-solid fa-envelope" style="color: #ffffff;"></i></div><span class="c-span">E-mail address:</span><br>
-                krokmichaldm@gmail.com <br><br>
-                <div><i class="fa-solid fa-phone" style="color: #ffffff;"></i></div><span class="c-span">Phone number:</span> <br>
-                +48 530 525 501
+            <div class="row">
+              <div class="col-12 front-desc">
+                <p>
+                  Hi, my name is Michał Krok. I'm beginner front end developer
+                  based in Rzeszów, Poland.
+                  <span class="pin">
+                    <i class="fa-solid fa-map-pin" style="color: #00fff7"></i
+                  ></span>
+                </p>
+              </div>
             </div>
-            <div id="contact-form">
-                <form action="https://formspree.io/f/mvojnkzq" method="POST">
-                <label><input type="text" name="name" id="name" class="field" placeholder="name" required></label>
-                <label><input type="email" name="email" id="email" class="field" placeholder="email" required></label>
-                <label><input type="text" name="phone" id="phone" class="field" placeholder="phone number" required></label>
-                <label><textarea name='message' id="message" class="field" cols="30" rows="10" placeholder="message"></textarea></label>
+            <div class="row">
+              <div class="col-12">
+                <a href="https://github.com/krokmichal/PORTFOLIO"
+                  ><i
+                    class="fa-brands fa-github fa-2x"
+                    style="margin-right: 10px"
+                  ></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/micha%C5%82-krok-b2a34b29b/"
+                  ><i class="fa-brands fa-linkedin fa-2x"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-xl-5 photo">
+            <div class="row">
+              <div class="col-12">
+                <img src="images/me2.PNG" alt="" class="me" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row skills">
+          <div class="col-10 offset-1 skills-title">SKILLS</div>
+        </div>
+        <div class="row skillset">
+          <div class="col-1 offset-md-2">
+            <i class="fa-brands fa-html5 fa-2x" style="color: #fa6400"></i>
+          </div>
+          <div class="col-1">
+            <i class="fa-brands fa-css3-alt fa-2x" style="color: #004be0"></i>
+          </div>
+          <div class="col-1">
+            <i class="fa-brands fa-js fa-2x" style="color: #efd71f"></i>
+          </div>
+          <div class="col-1">
+            <i class="fa-brands fa-bootstrap fa-2x" style="color: #820ff5"></i>
+          </div>
+          <div class="col-1">
+            <i class="fa-brands fa-git fa-2x" style="color: #e84c30"></i>
+          </div>
+          <div class="col-1">
+            <i class="fa-solid fa-database fa-2x" style="color: #ea8b10"></i>
+          </div>
+          <div class="col-1">
+            <i class="fa-brands fa-linux fa-2x" alt="linux"></i>
+          </div>
+          <div class="col-1">
+            <i class="fa-solid fa-spinner fa-spin fa-2x"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" id="about">
+      <div class="container about-container">
+        <div class="row about-main-row">
+          <div class="col-11 col-lg-6 col-xxl-5 offset-xxl-1 about-photo">
+            <img src="/images/home-office.jpg" alt="" class="home-office" />
+          </div>
+          <div class="col-12 col-lg-6 col-xxl-5">
+            <div class="row about-row">
+              <div class="col-6 about-title">ABOUT ME</div>
+
+              <div class="col-12 about-title-extension">
+                <h2>
+                  Beginner front end developer based in Rzeszów, Poland.<span
+                    class="pin"
+                  >
+                    <i class="fa-solid fa-map-pin" style="color: #00fff7"></i
+                  ></span>
+                </h2>
+              </div>
+              <div class="col-12 about-text">
+                As a beginner front-end developer, I constantly enlarge my skill
+                resources. At the moment I am focused on learning React and
+                Sass. While doing this, I am actively searching for a company
+                where i could participate in an internship and spread my wings
+                there. In the future, I would like my skills to expand not only
+                to other technologies but also to other fields of IT.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" id="projects">
+      <div class="container projects-container">
+        <div class="row projects-first-row">
+          <div class="col-6 offset-md-1 projects-title">PORTFOLIO</div>
+          <div class="col-12 offset-md-1">
+            <h2>
+              List of my current projects, that will be updated any moment!
+            </h2>
+          </div>
+        </div>
+        <div class="row odd">
+          <div class="col-12 col-md-5 offset-md-1 project-photo">
+            <a href="https://krokmichal.github.io/hangman/"
+              ><img src="/images/hangman.PNG" alt=""
+            /></a>
+          </div>
+          <div class="col-12 col-md-5 project-info">
+            <div class="row">
+              <div class="col-12 project-title">HANGMAN</div>
+              <div class="col-12 project-description">
+                A popular logic game where you have to guess someone's password
+                letter by letter. If you make ten mistakes then you are out of
+                the game!
+              </div>
+              <div class="col-4 offset-2 technologies">CSS</div>
+              <div class="col-4 technologies">JS</div>
+              <div class="col-12 project-links">
+                Code
+                <a
+                  href="https://github.com/krokmichal/PORTFOLIO/tree/main/hangman/assets"
+                  ><i
+                    class="fa-brands fa-github fa-2x"
+                    style="margin-right: 10px"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row even">
+          <div class="col-12 col-md-5 offset-md-1 project-info">
+            <div class="row">
+              <div class="col-12 project-title">TODO</div>
+              <div class="col-12 project-description">
+                Simple to-do web application where you can add your daily tasks
+                for better organisation.
+              </div>
+              <div class="col-4 offset-2 technologies">CSS</div>
+              <div class="col-4 technologies">JS</div>
+              <div class="col-12 project-links">
+                Code
+                <a
+                  href="https://github.com/krokmichal/PORTFOLIO/tree/main/todo/assets"
+                  ><i
+                    class="fa-brands fa-github fa-2x"
+                    style="margin-right: 10px"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-5 project-photo">
+            <img src="/images/todo.PNG" alt="" />
+          </div>
+        </div>
+        <div class="row odd">
+          <div class="col-12 col-md-5 offset-md-1 project-photo">
+            <img src="/images/calculator.PNG" alt="" />
+          </div>
+          <div class="col-12 col-md-5 project-info">
+            <div class="row">
+              <div class="col-12 project-title">CALCULATOR</div>
+              <div class="col-12 project-description">
+                Casual calculator that does everything what non-scientific
+                calculators do.
+              </div>
+              <div class="col-4 offset-2 technologies">CSS</div>
+              <div class="col-4 technologies">JS</div>
+              <div class="col-12 project-links">
+                Code
+                <a
+                  href="https://github.com/krokmichal/PORTFOLIO/tree/main/calculator/assets"
+                  ><i
+                    class="fa-brands fa-github fa-2x"
+                    style="margin-right: 10px"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row even">
+          <div class="col-12 col-md-5 offset-md-1 project-info">
+            <div class="row">
+              <div class="col-12 project-title">MOVIE BROWSER</div>
+              <div class="col-12 project-description">
+                Just a simple movie broweser where you can look for your
+                favorites movies.
+              </div>
+              <div class="col-3 offset-2 technologies">CSS</div>
+              <div class="col-3 technologies">JS</div>
+              <div class="col-3 technologies">API</div>
+              <div class="col-12 project-links">
+                Code
+                <a
+                  href="https://github.com/krokmichal/PORTFOLIO/tree/main/movie-browser/assets"
+                  ><i
+                    class="fa-brands fa-github fa-2x"
+                    style="margin-right: 10px"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-5 project-photo">
+            <img src="/images/movie-browser.PNG" alt="" />
+          </div>
+        </div>
+        <div class="row odd">
+          <div class="col-12 col-md-5 offset-md-1 project-photo">
+            <img src="/images/digital-clock.PNG" alt="" />
+          </div>
+          <div class="col-12 col-md-5 project-info">
+            <div class="row">
+              <div class="col-12 project-title">DIGITAL CLOCK</div>
+              <div class="col-12 project-description">
+                Digital clock, timer ad stopwatch. You can check local time for
+                London, Warsaw and Moscow, and you can set timer for your
+                boiling eggs.
+              </div>
+              <div class="col-4 offset-2 technologies">CSS</div>
+              <div class="col-4 technologies">JS</div>
+              <div class="col-12 project-links">
+                Code
+                <a
+                  href="https://github.com/krokmichal/PORTFOLIO/tree/main/digital-clock/assets"
+                  ><i
+                    class="fa-brands fa-github fa-2x"
+                    style="margin-right: 10px"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" id="contact">
+      <div class="container contact-container">
+        <div class="row">
+          <div class="col-6 offset-xl-1 contact-title">CONTACT</div>
+          <div class="col-11 offset-xl-1 contact-title-extension">
+            <h2>Get in touch!</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-6 col-xl-5 offset-xl-1">
+            <div class="row info-row">
+              <div class="col-12 inf">
+                <i class="fa-solid fa-envelope fa-2x"></i>
+                <span class="informations">Email address:</span>
+                krokmichaldm@gmail.com
+              </div>
+              <div class="col-12 inf">
+                <i class="fa-solid fa-phone fa-2x"></i
+                ><span class="informations">Phone number:</span> +48 530 525 501
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 col-xl-5">
+            <div class="row">
+              <form action="https://formspree.io/f/mvojnkzq" method="POST">
+                <label
+                  ><input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="field"
+                    placeholder="name"
+                    required
+                /></label>
+                <label
+                  ><input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="field"
+                    placeholder="email"
+                    required
+                /></label>
+                <label
+                  ><input
+                    type="text"
+                    name="phone"
+                    id="phone"
+                    class="field"
+                    placeholder="phone number"
+                    required
+                /></label>
+                <label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    class="field"
+                    cols="30"
+                    rows="10"
+                    placeholder="message"
+                  ></textarea>
+                </label>
                 <div id="buttons">
-                    <button type="submit" class="c-button" id="send-button">SEND</button>
+                  <button
+                    type="submit"
+                    class="btn btn-primary"
+                    id="send-button"
+                  >
+                    SEND
+                  </button>
                 </div>
-                </form>
-                <button onclick="clearForm()" class="c-button" id="clear-button">CLEAR</button>
+              </form>
+              <button
+                onclick="clearForm()"
+                class="btn btn-secondary"
+                id="clear-button"
+              >
+                CLEAR
+              </button>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-    <footer>
-        <a href="https://www.linkedin.com/in/micha%C5%82-krok-b2a34b29b/" target="_blank"><i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i></a>
-        <a href="https://github.com/krokmichal" target="_blank"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a>
-    </footer>
-</div>
-    <script src="https://smtpjs.com/v3/smtp.js"></script> 
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

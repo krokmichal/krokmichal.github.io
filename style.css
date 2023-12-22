@@ -281,7 +281,7 @@ label {
 
 @media screen and (max-width: 767px) {
   #contact {
-    height: 150vh;
+    height: 120vh;
     align-items: end;
   }
 
@@ -343,7 +343,7 @@ label {
 
 @media screen and (max-width: 576px) {
   #contact {
-    height: 110vh;
+    height: 90vh;
   }
 
   #about {

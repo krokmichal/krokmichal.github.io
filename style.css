@@ -22,7 +22,6 @@ body {
   width: 100%;
   height: 100vh;
   display: flex;
-  background-color: var(--very-dark-blue-main);
   justify-content: center;
   align-items: center;
 }
@@ -40,7 +39,6 @@ body {
 }
 
 .container {
-  /* background-color: var(--very-dark-blue-card); */
   height: 50vh;
 }
 
@@ -65,11 +63,6 @@ a {
 .front {
   margin-top: 70px;
 }
-
-/* .title,
-.photo {
-  border: white 1px solid;
-} */
 
 .me {
   width: 400px;
@@ -205,9 +198,15 @@ label {
   margin-top: 10px;
 }
 
-@media screen and (max-width: 1399px) {
+@media screen and (min-width: 1401px) and (max-height: 940px) {
+  #contact {
+    justify-content: end;
+    height: 150vh;
+  }
+}
+
+@media screen and (max-width: 1400px) {
   #projects {
-    height: 160vh;
     margin-top: 70px;
   }
 }
@@ -277,6 +276,146 @@ label {
 
   .info-row {
     margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #contact {
+    height: 150vh;
+    align-items: end;
+  }
+
+  #about {
+    margin-bottom: 0;
+  }
+  .container,
+  .main-row {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .title .row,
+  .main-row div {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .me {
+    width: 250px;
+    margin-left: 20px;
+  }
+
+  .skillset {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .about-title,
+  .about-title-extension,
+  .about-text,
+  .about-main-row div {
+    padding: 0;
+  }
+
+  .odd {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .even {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #projects {
+    height: 300vh;
+  }
+
+  .projects-container {
+    margin-bottom: 200vh;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #contact {
+    height: 110vh;
+  }
+
+  #about {
+    height: 60vh;
+  }
+
+  .about-container {
+    margin-bottom: 0;
+  }
+
+  .main-row,
+  .title,
+  .photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title .row {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .front-desc {
+    text-align: center;
+  }
+
+  .main-container {
+    margin-bottom: 400px;
+  }
+
+  .skills {
+    margin-top: 0;
+  }
+
+  .skillset div {
+    padding: 0;
+    margin: 6px;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  #about {
+    margin-top: 60px;
+  }
+
+  .contact-container .row > * {
+    padding: 0;
+  }
+
+  .contact-container .row .col-12 .row {
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .inf {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skillset div {
+    padding: 0;
+    margin: 15px;
+  }
+
+  .skillset,
+  .skills {
+    margin-bottom: 0;
   }
 }
 
@@ -390,133 +529,5 @@ label {
   }
   #about {
     height: 260vh;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  #contact {
-    height: 150vh;
-    align-items: end;
-  }
-
-  #about {
-    margin-bottom: 0;
-  }
-  .container,
-  .main-row {
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
-    width: 100%;
-  }
-
-  .title .row,
-  .main-row div {
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .me {
-    width: 250px;
-    margin-left: 20px;
-  }
-
-  .skillset {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .about-title,
-  .about-title-extension,
-  .about-text,
-  .about-main-row div {
-    padding: 0;
-  }
-
-  .odd {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .even {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  #projects {
-    height: 300vh;
-  }
-
-  .projects-container {
-    margin-bottom: 200vh;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .main-row,
-  .title,
-  .photo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .title .row {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .front-desc {
-    text-align: center;
-  }
-
-  .main-container {
-    margin-bottom: 400px;
-  }
-
-  .skills {
-    margin-top: 0;
-  }
-
-  .skillset div {
-    padding: 0;
-    margin: 6px;
-  }
-}
-
-@media screen and (max-width: 435px) {
-  #about {
-    margin-top: 60px;
-  }
-
-  .contact-container .row > * {
-    padding: 0;
-  }
-
-  .contact-container .row .col-12 .row {
-    padding: 0;
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
-@media screen and (max-width: 374px) {
-  .inf {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .skillset div {
-    padding: 0;
-    margin: 15px;
-  }
-
-  .skillset,
-  .skills {
-    margin-bottom: 0;
   }
 }

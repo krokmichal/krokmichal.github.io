@@ -205,7 +205,19 @@ label {
   margin-top: 10px;
 }
 
+@media screen and (max-width: 1399px) {
+  #projects {
+    height: 160vh;
+    margin-top: 70px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
+  #projects {
+    height: 150vh;
+    margin-top: 140px;
+  }
+
   .project-links,
   .technologies,
   .project-description {
@@ -213,7 +225,11 @@ label {
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
+  #about {
+    margin-bottom: 250px;
+  }
+
   .me {
     width: 300px;
     margin-top: 50px;
@@ -264,42 +280,128 @@ label {
   }
 }
 
-@media (max-height: 800px) {
-  #contact,
+@media (max-height: 840px) {
   #about {
+    height: 110vh;
+  }
+  #contact {
+    align-items: end;
+  }
+}
+
+@media (max-height: 800px) {
+  #contact {
+    height: 130vh;
+  }
+  #about {
+    height: 110vh;
+  }
+}
+
+@media (max-height: 770px) {
+  #contact {
+    height: 150vh;
+  }
+}
+
+@media (max-height: 730px) {
+  #contact {
     height: 170vh;
   }
-}
-
-@media (max-height: 750px) {
-  #contact,
   #about {
-    height: 200vh;
+    height: 120vh;
   }
 }
 
-@media (max-height: 700px) {
-  #contact,
+@media (max-height: 690px) {
+  #contact {
+    height: 200vh;
+  }
+  #about {
+    margin-top: 20vh;
+  }
+}
+
+@media (max-height: 640px) {
+  #contact {
+    height: 225vh;
+  }
+}
+
+@media (max-height: 600px) {
+  #contact {
+    height: 250vh;
+  }
+  #about {
+    height: 130vh;
+  }
+}
+
+@media (max-height: 550px) {
+  #contact {
+    height: 270vh;
+  }
+  #about {
+    height: 150vh;
+  }
+}
+
+@media (max-height: 520px) {
+  #contact {
+    height: 310vh;
+  }
+  #about {
+    height: 160vh;
+  }
+}
+
+@media (max-height: 480px) {
+  #contact {
+    height: 370vh;
+  }
+  #about {
+    height: 180vh;
+    margin-top: 30vh;
+  }
+}
+
+@media (max-height: 430px) {
+  #contact {
+    height: 420vh;
+  }
+  #about {
+    height: 210vh;
+    margin-top: 40vh;
+  }
+}
+
+@media (max-height: 390px) {
+  #contact {
+    height: 470vh;
+  }
   #about {
     height: 230vh;
   }
 }
 
-@media (max-height: 650px) {
-  #contact,
-  #about {
-    height: 250vh;
+@media (max-height: 360px) {
+  #contact {
+    height: 520vh;
   }
-}
-
-@media (max-height: 600px) {
-  #contact,
   #about {
-    height: 320vh;
+    height: 260vh;
   }
 }
 
 @media screen and (max-width: 767px) {
+  #contact {
+    height: 150vh;
+    align-items: end;
+  }
+
+  #about {
+    margin-bottom: 0;
+  }
   .container,
   .main-row {
     margin-left: 0;
@@ -387,6 +489,10 @@ label {
 }
 
 @media screen and (max-width: 435px) {
+  #about {
+    margin-top: 60px;
+  }
+
   .contact-container .row > * {
     padding: 0;
   }

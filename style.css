@@ -44,7 +44,8 @@ body {
   margin-bottom: 30vh;
 }
 
-.container {
+.about-container,
+.projects-container {
   height: 50vh;
 }
 

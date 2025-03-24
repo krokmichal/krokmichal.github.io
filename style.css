@@ -15,25 +15,17 @@ body {
   background-color: var(--very-dark-blue-main);
 }
 
-#main,
-#about,
-#projects,
-#contact {
+.section {
   width: 100%;
-  height: 100vh;
+  padding: 10vh 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* #about,
-#projects,
-#contact {
-  padding-top: 10em;
-} */
 
 #projects {
-  height: 200vh;
+  min-height: 220vh;
 }
 
 .projects-container {
@@ -297,8 +289,19 @@ label {
 
 @media screen and (max-width: 767px) {
   #contact {
-    height: 120vh;
+    height: 280vh;
     align-items: end;
+    width: 100%;
+  }
+
+  .projects-section {
+    padding-bottom: 20px; 
+    margin-bottom: 20px;
+}
+
+  .contact-form {
+    width: 100%;
+    padding: 20px;
   }
 
   #about {
@@ -349,7 +352,8 @@ label {
   }
 
   #projects {
-    height: 300vh;
+    min-height: 300vh;
+    margin-bottom: 20px;
   }
 
   .projects-container {
@@ -432,118 +436,5 @@ label {
   .skillset,
   .skills {
     margin-bottom: 0;
-  }
-}
-
-@media (max-height: 840px) {
-  #about {
-    height: 110vh;
-  }
-  #contact {
-    align-items: end;
-  }
-}
-
-@media (max-height: 800px) {
-  #contact {
-    height: 130vh;
-  }
-  #about {
-    height: 110vh;
-  }
-}
-
-@media (max-height: 770px) {
-  #contact {
-    height: 150vh;
-  }
-}
-
-@media (max-height: 730px) {
-  #contact {
-    height: 170vh;
-  }
-  #about {
-    height: 120vh;
-  }
-}
-
-@media (max-height: 690px) {
-  #contact {
-    height: 200vh;
-  }
-  #about {
-    margin-top: 20vh;
-  }
-}
-
-@media (max-height: 640px) {
-  #contact {
-    height: 225vh;
-  }
-}
-
-@media (max-height: 600px) {
-  #contact {
-    height: 250vh;
-  }
-  #about {
-    height: 130vh;
-  }
-}
-
-@media (max-height: 550px) {
-  #contact {
-    height: 270vh;
-  }
-  #about {
-    height: 150vh;
-  }
-}
-
-@media (max-height: 520px) {
-  #contact {
-    height: 310vh;
-  }
-  #about {
-    height: 160vh;
-  }
-}
-
-@media (max-height: 480px) {
-  #contact {
-    height: 370vh;
-  }
-  #about {
-    height: 180vh;
-    margin-top: 30vh;
-  }
-}
-
-@media (max-height: 430px) {
-  #contact {
-    height: 420vh;
-  }
-  #about {
-    height: 210vh;
-    margin-top: 40vh;
-  }
-}
-
-@media (max-height: 390px) {
-  #contact {
-    height: 470vh;
-  }
-  #about {
-    height: 230vh;
-  }
-}
-
-@media (max-height: 360px) {
-  #contact {
-    height: 520vh;
-  }
-  #about {
-    height: 260vh;
   }
 }

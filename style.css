@@ -28,17 +28,13 @@ body {
   min-height: 220vh;
 }
 
-.projects-container {
-  margin-bottom: 130vh;
-}
-
 .contact-container {
   margin-bottom: 30vh;
 }
 
 .about-container,
 .projects-container {
-  height: 50vh;
+  min-height: 50vh;
 }
 
 .main-container {
@@ -202,26 +198,27 @@ label {
 }
 
 #contact {
-  height: 160vh;
-  padding-top: 70em;
+  min-height: 120vh;
+  padding-top: 5em;
 }
 
 @media screen and (min-width: 1401px) and (max-height: 940px) {
   #contact {
     justify-content: end;
-    height: 150vh;
+    min-height: 150vh;
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1400px) and (max-height: 830px) {
   #projects {
     margin-top: 70px;
+    margin-bottom: 85vh;
   }
 }
 
 @media screen and (max-width: 1199px) {
   #projects {
-    height: 150vh;
+    min-height: 150vh;
     margin-top: 140px;
   }
 
@@ -232,7 +229,8 @@ label {
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
+
   #about {
     margin-bottom: 250px;
   }
@@ -268,7 +266,7 @@ label {
   }
 
   #contact {
-    height: 120vh;
+    min-height: 120vh;
   }
 
   .inf {
@@ -289,7 +287,6 @@ label {
 
 @media screen and (max-width: 767px) {
   #contact {
-    height: 280vh;
     align-items: end;
     width: 100%;
   }
@@ -352,22 +349,14 @@ label {
   }
 
   #projects {
-    min-height: 300vh;
     margin-bottom: 20px;
-  }
-
-  .projects-container {
-    margin-bottom: 200vh;
   }
 }
 
 @media screen and (max-width: 576px) {
-  #contact {
-    height: 290vh;
-  }
 
   #about {
-    height: 60vh;
+    min-height: 60vh;
   }
 
   .about-container {
@@ -436,5 +425,11 @@ label {
   .skillset,
   .skills {
     margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 260px) {
+  #projects {
+    margin-bottom: 25vh;
   }
 }
